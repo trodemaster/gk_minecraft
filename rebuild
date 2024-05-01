@@ -1,0 +1,4 @@
+#!/opt/local/bin/bash
+limactl factory-reset gk
+cp ~/code/gk_minecraft/gk.yaml ~/.lima/gk/lima.yaml
+limactl start gk
