@@ -1,8 +1,8 @@
 vmType: "vz"
 images:
-- location: "https://cloud-images.ubuntu.com/noble/20240423/noble-server-cloudimg-amd64.img"
+- location: "https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img"
   arch: "x86_64"
-  digest: "sha256:32a9d30d18803da72f5936cf2b7b9efcb4d0bb63c67933f17e3bdfd1751de3f3"
+  digest: "sha256:ffafb396efb0f01b2c0e8565635d9f12e51a43c51c6445fd0f84ad95c7f74f9b"
 
 memory: 16GiB
 disk: 40GiB
@@ -16,7 +16,8 @@ mounts:
 timezone: "America/Los_Angeles"
 
 networks:
-- vzNAT: true
+- lima: bridged
+  interface: en1
 
 ssh:
   localPort: 60022

@@ -13,7 +13,7 @@ sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg <<< "network: {con
 sudo rm -f /etc/netplan/50-cloud-init.yaml
 
 # update netplan config
-sudo tee /etc/netplan10-gk-minecraft.yaml <<EOF
+sudo tee /etc/netplan/10-gk-minecraft.yaml <<EOF
 # static IP
 network:
   version: 2
